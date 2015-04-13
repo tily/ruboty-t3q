@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Ruboty::T3q::VERSION
   spec.authors       = ["tily"]
   spec.email         = ["tidnlyam@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{ruboty handler for "twitter to tumblr quote"}
+  spec.description   = %q{ruboty handler for "twitter to tumblr quote"}
   spec.homepage      = ""
   spec.license       = "MIT"
 
