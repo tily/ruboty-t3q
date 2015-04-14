@@ -53,6 +53,7 @@ module Ruboty
         in_reply_to_status_id = message.original[:tweet].try(:in_reply_to_status_id)
         if book = data.find {|k, v| v['title_status_id'] == in_reply_to_status_id }
           response = tumblr.quote(tumblr_blog_name, quote: message[:text], source: book.first)
+	  p response
           dm "tumblr に投稿しました #{response["posts"]["post_url"]}"
 	end
       end
