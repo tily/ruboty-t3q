@@ -12,7 +12,7 @@ module Ruboty
       env :TUMBLR_ACCESS_TOKEN_SECRET, "tumblr access token secret"
       env :TUMBLR_BLOG_NAME, "tumblr blog name"
 
-      Tumblr.configure do |config|
+      ::Tumblr.configure do |config|
         config.consumer_key = ENV['TUMBLR_CONSUMER_KEY']
         config.consumer_secret = ENV['TUMBLR_CONSUMER_SECRET']
         config.oauth_token = ENV['TUMBLR_ACCESS_TOKEN']
